@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SumClassTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-01-08T20:22:08" hostname="KARIMI-HOME" time="0.042">
+  <properties/>
+  <testcase name="sumInputInvalidStringTest()" classname="SumClassTest" time="0.04"/>
+  <testcase name="sumInputTest()" classname="SumClassTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
