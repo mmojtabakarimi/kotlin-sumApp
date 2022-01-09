@@ -34,25 +34,29 @@ class SumClass {
 
     public fun makeDigitStringToNumberString(stringNumber: String): String {
         var digitStringList: List<String> = stringNumber.split("-")
-        var myList: MutableList<String> = mutableListOf<String>()
+        var numberList: MutableList<String> = mutableListOf<String>()
 
         digitStringList.forEach {
-            var res = getDigitStringValue(it)
-            if (res != "") {
-                myList.add(res)
+            var digitStrFound= getDigitStringValue(it)
+            if (digitStrFound != "") {
+                numberList.add(digitStrFound)
             }
         }
 
-        var result: String = myList.stream().collect(Collectors.joining("+"))
-        return "$result="
+        var numberLists: String = numberList.stream().collect(Collectors.joining("+"))
+        return "$numberLists="
     }
 
-    private fun getDigitStringValue(p1: String): String {
-        digitMap.forEach {
-            if (p1.equals(it.name, ignoreCase = true)) {
-                return it.value.toString()
-            }
+    private fun getDigitStringValue(digitStr: String): String {
+
+        val result = digitMap.firstOrNull {
+            digitStr.equals(it.name, ignoreCase = true)
+        }
+
+        if (result != null) {
+            return result.value.toString()
         }
         return ""
+
     }
 }
