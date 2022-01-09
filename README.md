@@ -4,7 +4,7 @@ Then test the function with some possible inputs (but please not use the input f
 you can do this directly in the main function. It should be possible to pass the digits 0-9. 
 Everything that is not specified you can solve as you like it or as you think it makes sense.
 
-Tests:
+
 Test 1)
 "five-One-two-Nine-Three-Zero-seven"
 5+1+2+9+3+0+7=27
